@@ -1,0 +1,28 @@
+package views;
+import java.util.ArrayList;
+import java.util.List;
+import models.Estudante;
+import models.Pessoa;
+import models.Professor;
+public class Programa {
+
+	public static void main(String[] args) {
+		Pessoa ps = new Pessoa();
+		Professor prof= new Professor();
+		Estudante est= new Estudante();
+
+		List<Pessoa> p = new ArrayList<Pessoa>();
+		
+		
+		p.add(prof);
+		for(Professor pf: prof){
+		System.out.println(prof.toString());
+		}
+		p.add(est);
+		for(Estudante es: est) {
+			System.out.println(es.toString());
+		}
+
+	}
+
+}
